@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jiaxing Tan (Jason) - Academic Homepage</title>
+    <title>Jiaxin Tan (Jason) - Academic Homepage</title>
     <style>
-        /* CSS 样式区：这里控制网页长什么样 */
+        /* CSS 样式区 */
         :root {
-            --primary-color: #2c3e50; /*以此深蓝色为主色调，显得学术专业*/
+            --primary-color: #2c3e50; 
             --accent-color: #3498db;
             --text-color: #333;
             --bg-color: #f9f9f9;
@@ -21,36 +21,59 @@
             padding: 0;
         }
         .container {
-            max-width: 900px; /* 限制内容宽度，利于阅读 */
+            max-width: 900px; 
             margin: 0 auto;
             padding: 40px 20px;
             background-color: white;
             box-shadow: 0 0 20px rgba(0,0,0,0.05);
             min-height: 100vh;
         }
-        /* 头部设计 */
+        
+        /* 头部设计优化 */
         header {
             text-align: center;
             border-bottom: 2px solid #eee;
             padding-bottom: 30px;
             margin-bottom: 40px;
         }
+        
+        /* 头像样式 */
+        .profile-img {
+            width: 150px;       /* 头像宽度 */
+            height: 150px;      /* 头像高度 */
+            border-radius: 50%; /* 变成圆形 */
+            object-fit: cover;  /* 防止照片变形 */
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 加一点阴影更有质感 */
+            margin-bottom: 15px;
+        }
+
         h1 {
             color: var(--primary-color);
             margin-bottom: 5px;
+            margin-top: 10px;
             font-size: 2.5em;
         }
         .subtitle {
             color: #666;
             font-size: 1.1em;
             margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .contact-info {
+            margin-top: 15px;
         }
         .contact-info a {
             color: var(--accent-color);
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
             font-weight: bold;
+            display: inline-block; /* 手机上更好点按 */
         }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
         /* 章节设计 */
         section {
             margin-bottom: 40px;
@@ -64,6 +87,7 @@
             font-size: 1.2em;
             letter-spacing: 1px;
         }
+
         /* 内容条目 */
         .item {
             margin-bottom: 25px;
@@ -101,24 +125,16 @@
             color: #555;
             margin-right: 5px;
         }
+
         /* 响应式适配手机 */
         @media (max-width: 600px) {
             .item-header {
                 flex-direction: column;
             }
-        }
-        .download-btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: background 0.3s;
-        }
-        .download-btn:hover {
-            background-color: var(--accent-color);
+            .contact-info a {
+                display: block; /* 手机上联系方式换行显示 */
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -126,13 +142,14 @@
 
 <div class="container">
     <header>
-        <h1>Jiaxing (Jason) Tan</h1> 
+        <img src="avatar.jpg" alt="Jiaxin Tan" class="profile-img">
+        
+        <h1>Jiaxin (Jason) Tan</h1> 
         <p class="subtitle">Master Candidate in Logistics Engineering | Researcher in Supply Chain & AI Optimization</p>
         
         <div class="contact-info">
-            <a href="mailto:jasontan969@163.com">Email</a>
-            <a href="#">Google Scholar (Coming Soon)</a>
-            <a href="#">LinkedIn</a>
+            <a href="mailto:jasontan969@163.com">jasontan969@163.com</a>
+            <a href="tel:+8615334269043">+86 15334269043</a>
             </div>
     </header>
 
@@ -237,7 +254,7 @@
     </section>
     
     <footer style="text-align: center; font-size: 0.9em; color: #888; margin-top: 50px;">
-        <p>&copy; 2026 Jiaxing Tan. All rights reserved.</p>
+        <p>&copy; 2026 Jiaxin Tan. All rights reserved.</p>
     </footer>
 </div>
 
