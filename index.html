@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiaxing Tan (Jason) - Academic Homepage</title>
+    <style>
+        /* CSS 样式区：这里控制网页长什么样 */
+        :root {
+            --primary-color: #2c3e50; /*以此深蓝色为主色调，显得学术专业*/
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px; /* 限制内容宽度，利于阅读 */
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            min-height: 100vh;
+        }
+        /* 头部设计 */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        /* 章节设计 */
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+        /* 内容条目 */
+        .item {
+            margin-bottom: 25px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .institution {
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .role {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .tags span {
+            background-color: #eef2f5;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #555;
+            margin-right: 5px;
+        }
+        /* 响应式适配手机 */
+        @media (max-width: 600px) {
+            .item-header {
+                flex-direction: column;
+            }
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Jiaxing (Jason) Tan</h1> 
+        <p class="subtitle">Master Candidate in Logistics Engineering | Researcher in Supply Chain & AI Optimization</p>
+        
+        <div class="contact-info">
+            <a href="mailto:jasontan969@163.com">Email</a>
+            <a href="#">Google Scholar (Coming Soon)</a>
+            <a href="#">LinkedIn</a>
+            </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a Master's student at <strong>Xi'an University of Finance and Economics</strong>, specializing in Logistics Engineering and Management. My research focuses on the intersection of <strong>Supply Chain Management</strong> and <strong>Artificial Intelligence</strong>, specifically applying machine learning and robust optimization to solve complex logistics problems.
+        </p>
+        <p>
+            I am currently seeking PhD opportunities where I can further explore supply chain resilience and data-driven optimization algorithms.
+        </p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        
+        <div class="item">
+            <div class="item-header">
+                <span class="institution">Xi'an University of Finance and Economics</span>
+                <span class="date">Sept. 2024 - June 2026 (Expected)</span>
+            </div>
+            <div class="role">M.E. in Logistics Engineering and Management</div>
+            <ul>
+                <li><strong>GPA Ranking:</strong> 2/64 (Awarded Outstanding Graduate Student)</li>
+                <li><strong>English Proficiency:</strong> IELTS 7.0 / CET-4 / CET-6</li>
+                <li><strong>Core Courses:</strong> Operations Research, Big Data Analysis (Python), Intelligent Logistics, System Optimization.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="institution">Xi'an University of Finance and Economics</span>
+                <span class="date">Sept. 2020 - June 2024</span>
+            </div>
+            <div class="role">B.Mgt. in Logistics Management</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Selected Research Projects</h2>
+        
+        <div class="item">
+            <div class="item-header">
+                <span class="institution">Cold Chain Logistics Prediction Optimization</span>
+                <span class="date">Jan. 2025 - Present</span>
+            </div>
+            <div class="role">Project Leader | Graduate Innovation Fund</div>
+            <p><em>Optimization of Fresh Agricultural Products Cold Chain Based on Variable Weight Combination Model.</em></p>
+            <ul>
+                <li>Developed a <strong>GM(1,1)-ARIMA-BP Neural Network</strong> combination model to address single-model high error rates.</li>
+                <li>Proposed a "Reciprocal Variance - Dynamic Weight" algorithm, reducing the average prediction error from 2.60% to <strong>1.54%</strong>.</li>
+            </ul>
+            <div class="tags">
+                <span>Python</span> <span>Neural Networks</span> <span>ARIMA</span> <span>Forecasting</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="institution">Green Logistics Efficiency in "Belt and Road" Regions</span>
+                <span class="date">Sept. 2023 - Feb. 2024</span>
+            </div>
+            <div class="role">Researcher | Xi'an Social Science Planning Fund</div>
+            <ul>
+                <li>Collected and cleaned large-scale regional logistics data.</li>
+                <li>Applied <strong>Super-efficiency SBM model</strong> and <strong>Malmquist Index</strong> to measure green logistics efficiency.</li>
+                <li>Analyzed influencing factors using Tobit Regression via SPSS.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        
+        <div class="item">
+            <div class="item-header">
+                <span class="institution">China Eastern Air Logistics (Guangzhou)</span>
+                <span class="date">June 2025 - Sept. 2025</span>
+            </div>
+            <div class="role">Market Dept. Intern (Sales Operations & Data Analysis)</div>
+            <ul>
+                <li><strong>Yield Management:</strong> Created CBA (Capacity-Booking-Allocation) models to optimize cargo space. Achieved <strong>70% revenue growth</strong> MoM during peak shrimp export season.</li>
+                <li><strong>Data Visualization:</strong> Developed daily sales dashboards and KPI reports to support the sales team's strategic decision-making.</li>
+                <li><strong>Operations:</strong> Managed 50+ daily orders from 20+ freight forwarders with 100% accuracy before flight cutoff.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills & Awards</h2>
+        <div class="item">
+            <ul>
+                <li><strong>Technical Skills:</strong> Python (Pandas/Scikit-learn), SPSS, PowerBI, MS Office.</li>
+                <li><strong>Languages:</strong> Mandarin (Native), English (IELTS 7.0 - Proficient).</li>
+                <li><strong>Awards:</strong> 
+                    National 1st Prize (China Society of Logistics & Purchasing), 
+                    1st Class Academic Scholarship (2024, 2025), 
+                    Campus Singer Champion, Basketball League Champion.
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer style="text-align: center; font-size: 0.9em; color: #888; margin-top: 50px;">
+        <p>&copy; 2026 Jiaxing Tan. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
